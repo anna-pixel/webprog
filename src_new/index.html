@@ -2,11 +2,14 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <title>Reiseblog</title>
 
          <!-- Required Bootstrag meta tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Reiseblog</title>
+        <!-- Klasse App: Steuert die gesamte Anwendung -->
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css" />
 
         <!-- Include Bootstrap CSS -->
         <link
@@ -77,7 +80,7 @@
         <!-- Create the Quill editor container -->
         <div id="editor">
             <p>Hello World!</p>
-            <p>Some initial <strong>bold</strong> text</p>
+            <p>Wir freuen uns auf deinen <strong>Reiseblog-Beitrag</strong>!</p>
             <p><br></p>
         </div>
 
@@ -106,6 +109,25 @@
         <script>
             var quill = new Quill('#editor', {
                 theme: 'snow'
+            });
+        </script>
+
+        <!-- Anwendung starten -->
+        <script>
+            window.addEventListener("load", () => {
+                let pages = [{
+                    url: "^/$",
+                    klass: PageOverview,
+                },{
+                    url: "^/Detail/(.*)$",
+                    klass: PageDetail,
+                },{
+                    url: ".*",
+                    klass: PageNotFound,
+                }];
+
+                let app = new App("Reiseblog", pages);
+                app.run();
             });
         </script>
 
