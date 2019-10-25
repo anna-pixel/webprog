@@ -1,0 +1,12 @@
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(64, 64, 64);
+}
+
+.navbar > .show > a:focus{
+    background: transparent;
+    outline: 0;
+}
+
+.dropdown-menu .show > .dropdown-toggle::after{
+    transform: rotate(-90deg);
+}
