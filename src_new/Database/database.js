@@ -99,7 +99,7 @@ class Database {
                 "authors": "Leonie Neis",
                 "land": "Italien",
                 "Datum": "05-08.2016",
-                "content": "Ciao Cioa amici, kennt ihr schon die 10 besten Restaurnts in ganz Rom?""
+                "content": "Ciao Cioa amici, kennt ihr schon die 10 besten Restaurnts in ganz Rom?"
               /**  "picture:"https://upload.wikimedia.org/wikipedia/commons/a/ae/Pasta-Herstellung.jpg" */
             },{
                 "id": "5",
