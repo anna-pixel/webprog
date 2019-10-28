@@ -78,6 +78,49 @@ class Database {
                 "content": "Hallo liebe Leute, die Reise nach Stockholm war atemberaubend! :) "
                 "picture:"img"
 
+                "id": "2",
+                "title": "Roadtrip entlang der grichischen Küste",
+                "authors": "Henriette Wien",
+                "land": "Griechenland",
+                "Datum": "12.10.2015",
+                "content": "Grüß euch Weltenbummler, in diesem Post stelle ich die schönsten Reiseziele entlang der grichischen Küste vor. "
+                "picture:"img"
+
+                "id": "3",
+                "title": "Wochenendausflug nach Paris",
+                "authors": "Leonie Neis",
+                "land": "Frankreich",
+                "Datum": "14-02-2008",
+                "content": "Hallo Freunde der Reiselust, heute berichte ich euch von meinem Wochenendausflug in die Stadt der Liebe. "
+                "picture:"img"
+
+                "id": "4",
+                "title": "Kulinarische Genüsse in Rom",
+                "authors": "Leonie Neis",
+                "land": "Italien",
+                "Datum": "05-08.2016",
+                "content": "Ciao Cioa amici, kennt ihr schon die 10 besten Restaurnts in ganz Rom?""
+                "picture:"img"
+
+                "id": "5",
+                "title": "Roadtrip durch die USA",
+                "authors": "Henriette Wien",
+                "land": "Amerika",
+                "Datum": "15.09.2017",
+                "content": "Heey friends, der Roadtrip entlang der Route 66 war LIFECHANGING! "
+                "picture:"img"
+
+                "id": "6",
+                "title": "Begegnung mit einer Geisha in Kyoto ",
+                "authors": "Anna-Maria Vater",
+                "land": "Japan",
+                "Datum": "25.11.2018",
+                "content": "Hallo Freunde, in diesem Post bereichte ich über meine Erlebnnisse in der einstigen, japanischen Hauptstadt Kyoto."
+                "picture:"img"
+
+
+
+
             }]);
         }
     }
