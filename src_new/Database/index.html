@@ -25,7 +25,7 @@
         <script>
             window.addEventListener("load", async () => {
                 let buttonInsertRow      = document.getElementById("button-insert-row");
-                let buttonDeleteRows     = document.getElementById("button-delete-rows");
+                /*let buttonDeleteRows     = document.getElementById("button-delete-rows");*/
                 let buttonDiscardChanges = document.getElementById("button-discard-changes");
                 let buttonSaveChanges    = document.getElementById("button-save-changes");
                 let table = new Tabulator("#data-table", {
@@ -37,9 +37,9 @@
                         {title: "ID",      field: "id",        editor: "input"},
                         {title: "Titel",   field: "title",     editor: "input"},
                 	 	{title: "Autoren", field: "authors",   editor: "input"},
-                        {title: "Auflage", field: "edition",   editor: "input"},
-                	 	{title: "Verlag",  field: "publisher", editor: "input"},
-                	 	{title: "Jahr",    field: "year",      editor: "number"},
+                        {title: "Land", field: "land",   editor: "input"},
+                	 	{title: "Inhalt",  field: "content", editor: "input"},
+                	 	{title: "Bild",    field: "picture",      editor: "img"}, /* EDITOR TYPE? */
                  	],
                 });
                 let database = new Database();
@@ -50,29 +50,30 @@
                         id: "",
                         title: "",
                         authors: "",
-                        publisher: "",
-                        year: "",
+                        land: "",
+                        content: "",
+                        picture: "",
                     }]);
                 }
-                async function deleteRows() {
-                    let books = table.getSelectedData();
+                /*async function deleteRows() {
+                    let posts = table.getSelectedData();
                     let rows = table.getSelectedRows();
-                    books.forEach(book => {
-                        deletedIds.push(book.id);
+                    posts.forEach(post => {
+                        deletedIds.push(post.id);
                     });
                     rows.forEach(row => {
                         row.delete();
                     });
-                }
+                }*/
                 async function reloadData() {
                     deletedIds = [];
-                    let books = await database.selectAllBooks();
-                    table.replaceData(books);
+                    let posts = await database.selectAllBooks();
+                    table.replaceData(posts);
                 }
                 async function saveChanges() {
                     try {
-                        await database.deleteBooksById(deletedIds);
-                        await database.saveBooks(table.getData());
+                        await database.deletePostsById(deletedIds);
+                        await database.savePosts(table.getData());
                         displayMessage("success", "Änderungen wurden gesichert.");
                         reloadData();
                     } catch (error) {
@@ -108,8 +109,8 @@
         <h3>Meine liebsten Fachbücher</h3>
 
         <div id="toolbar">
-            <button id="button-insert-row"      type="button" class="btn btn-primary">Neue Zeile einfügen</button>
-            <button id="button-delete-rows"     type="button" class="btn btn-primary">Markierte Zeilen löschen</button>
+            <button id="button-insert-row"      type="button" class="btn btn-primary">Neuen Post anlegen</button>
+            <!--<button id="button-delete-rows"     type="button" class="btn btn-primary">Markierten Post löschen</button> -->
             <button id="button-discard-changes" type="button" class="btn btn-primary">Änderungen verwerfen</button>
             <button id="button-save-changes"    type="button" class="btn btn-danger">Änderungen sichern</button>
         </div>
