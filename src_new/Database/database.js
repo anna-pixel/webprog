@@ -77,7 +77,7 @@ class Database {
                 "Datum": "24.06.2012",
                 "content": "Hallo liebe Leute, die Reise nach Stockholm war atemberaubend! :) "
                 /** "picture:"https://upload.wikimedia.org/wikipedia/commons/c/c3/Stockholm.jpg" */
-
+            },{
                 "id": "2",
                 "title": "Roadtrip entlang der grichischen Küste",
                 "authors": "Henriette Wien",
@@ -85,7 +85,7 @@ class Database {
                 "Datum": "12.10.2015",
                 "content": "Grüß euch Weltenbummler, in diesem Post stelle ich die schönsten Reiseziele entlang der grichischen Küste vor. "
               /**  "picture:"https://upload.wikimedia.org/wikipedia/commons/6/6e/Ionian_sea_islands%2C_pic1.JPG" */
-
+            },{
                 "id": "3",
                 "title": "Wochenendausflug nach Paris",
                 "authors": "Leonie Neis",
@@ -93,7 +93,7 @@ class Database {
                 "Datum": "14-02-2008",
                 "content": "Hallo Freunde der Reiselust, heute berichte ich euch von meinem Wochenendausflug in die Stadt der Liebe. "
                 /** "picture:"https://upload.wikimedia.org/wikipedia/de/c/cf/Paris_Montage_Ancient_and_Modern.png" */
-
+            },{
                 "id": "4",
                 "title": "Kulinarische Genüsse in Rom",
                 "authors": "Leonie Neis",
@@ -101,7 +101,7 @@ class Database {
                 "Datum": "05-08.2016",
                 "content": "Ciao Cioa amici, kennt ihr schon die 10 besten Restaurnts in ganz Rom?""
               /**  "picture:"https://upload.wikimedia.org/wikipedia/commons/a/ae/Pasta-Herstellung.jpg" */
-
+            },{
                 "id": "5",
                 "title": "Roadtrip durch die USA",
                 "authors": "Henriette Wien",
@@ -109,7 +109,7 @@ class Database {
                 "Datum": "15.09.2017",
                 "content": "Heey friends, der Roadtrip entlang der Route 66 war LIFECHANGING! "
                 /** "picture:"https://upload.wikimedia.org/wikipedia/commons/1/11/Route66_2004.jpg" */
-
+            },{
                 "id": "6",
                 "title": "Begegnung mit einer Geisha in Kyoto ",
                 "authors": "Anna-Maria Vater",
@@ -117,10 +117,6 @@ class Database {
                 "Datum": "25.11.2018",
                 "content": "Hallo Freunde, in diesem Post bereichte ich über meine Erlebnnisse in der einstigen, japanischen Hauptstadt Kyoto."
                 /**"picture:"https://upload.wikimedia.org/wikipedia/commons/f/f0/150124_At_Yasakakamimachi_Kyoto_Japan01n.jpg */
-
-
-
-
             }]);
         }
     }
