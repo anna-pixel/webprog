@@ -121,13 +121,13 @@ class Database {
         }
     }
     /**
-     * Gibt alle in der Datenbank gespeicherten Bücher zurück. Hier gilt
+     * Gibt alle in der Datenbank gespeicherten Posts zurück. Hier gilt
      * dasselbe wie im Kommentar zur Methode createDemoData() geschrieben.
      * Alle Dokumente auf einmal auszulesen ist nur dann eine gute Idee,
      * wenn man weiß, dass es nicht viele geben kann. Besser wäre daher,
      * die Menge mit der where()-Funktion von Firebase einzuschränken.
      *
-     * @returns Promise-Objekt mit den gespeicherten Büchern
+     * @returns Promise-Objekt mit den gespeicherten Posts
      */
     async selectAllPosts() {
         let result = await this._posts.orderBy("land").get();
