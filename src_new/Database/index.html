@@ -38,8 +38,9 @@
                         {title: "Titel",   field: "title",     editor: "input"},
                 	 	{title: "Autoren", field: "authors",   editor: "input"},
                         {title: "Land", field: "land",   editor: "input"},
+                        {title: "Datum",    field: "date",      editor: "input"}
                 	 	{title: "Inhalt",  field: "content", editor: "input"},
-                	 	{title: "Bild",    field: "picture",      editor: "img"}, /* EDITOR TYPE? */
+                	 	{title: "Bild",    field: "picture",      editor: "img"},
                  	],
                 });
                 let database = new Database();
@@ -51,6 +52,7 @@
                         title: "",
                         authors: "",
                         land: "",
+                        date: "",
                         content: "",
                         picture: "",
                     }]);

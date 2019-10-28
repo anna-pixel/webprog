@@ -62,8 +62,10 @@ class Database {
         *    "title": "Reise nach Hamburg",
         *    "authors": "Leonie",
         *    "land": "Dautschland",
+        *    "date": "input",
         *    "content": "Es war eine schöne Reise.",
-        *    "picture": "img"
+        *    "picture": "img",
+        *
         */
 
 
