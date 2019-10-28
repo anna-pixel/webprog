@@ -24,20 +24,20 @@ class Database {
         // werden, indem dort ein neues Projekt mit einer neuen Datenbank
         // angelegt und diese dann mit einer neuen App verknüpft wird.
         firebase.initializeApp({
-            apiKey: "AIzaSyD0Z_5DRMdWdlaUe9feahTYsQNRVDKYzzM",
-            authDomain: "test-72b3a.firebaseapp.com",
-            databaseURL: "https://test-72b3a.firebaseio.com",
-            projectId: "test-72b3a",
-            storageBucket: "test-72b3a.appspot.com",
-            messagingSenderId: "496635632514",
-            appId: "1:496635632514:web:4567d149cda58011e4cd9b",
+            apiKey: "AIzaSyCpuC3Bx2tT5ZtF0jOBgSQ4ieuzcitwjyg",
+            authDomain: "webprog-reiseblog.firebaseapp.com",
+            databaseURL: "https://webprog-reiseblog.firebaseio.com",
+            projectId: "webprog-reiseblog",
+            storageBucket: "webprog-reiseblog.appspot.com",
+            messagingSenderId: "647753401931",
+            appId: "1:647753401931:web:dbda6e0aa65c658c346fce"
         });
 
         // Dieses Objekt dient dem eigentlichen Datenbankzugriff.
         // Dabei können beliebig viele "Collections" angesprochen werden,
         // die in etwa den Tabellen einer klassischen Datenbank entsprechen.
         this._db = firebase.firestore();
-        this._books = this._db.collection("books");
+        this._posts = this._db.collection("posts");
     }
 
     /**
@@ -54,10 +54,21 @@ class Database {
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
     async createDemoData() {
-        let books = await this.selectAllBooks();
+        let posts = await this.selectAllPosts();
 
-        if (books.length < 1) {
-            this.saveBooks([{
+        /* DATENSTRUKTUR
+        *
+        *    "id": "1",
+        *    "title": "Reise nach Hamburg",
+        *    "authors": "Leonie",
+        *    "land": "Dautschland",
+        *    "content": "Es war eine schöne Reise.",
+        *    "picture": "img"
+        */
+
+
+        if (posts.length < 1) {
+            this.savePosts([{
                 "authors": "Peter Pohmann",
                 "edition": "1. Auflage",
                 "id": "cpp17",
@@ -111,16 +122,16 @@ class Database {
      *
      * @returns Promise-Objekt mit den gespeicherten Büchern
      */
-    async selectAllBooks() {
-        let result = await this._books.orderBy("title").get();
-        let books = [];
+    async selectAllPosts() {
+        let result = await this._posts.orderBy("land").get();
+        let posts = [];
 
         result.forEach(entry => {
-            let book = entry.data();
-            books.push(book);
+            let post = entry.data();
+            posts.push(post);
         });
 
-        return books;
+        return posts;
     }
 
     /**
@@ -128,13 +139,13 @@ class Database {
      * @param id: ID des gesuchten Buches
      * @returns Promise-Objekt mit dem gesuchten Buch
      */
-    async selectBookById(id) {
-        let result = await this._books.doc(id).get();
+    async selectPostById(id) {
+        let result = await this._posts.doc(id).get();
         return result.data();
     }
 
     /**
-     * Speichert ein einzelnes Buch in der Datenbank. Das hierfür übergebene
+     * Speichert ein einzelnen Post in der Datenbank. Das hierfür übergebene
      * Objekt sollte folgenden Aufbau haben:
      *
      *      {
@@ -146,23 +157,23 @@ class Database {
      *          year:      2019,
      *      }
      *
-     * @param books: Zu speicherndes Buch-Objekt
+     * @param posts: Zu speicherndes Post-Objekt
      */
-    saveBook(book) {
-        this._books.doc(book.id).set(book);
+    savePost(post) {
+        this._posts.doc(post.id).set(post);
     }
 
     /**
-     * Löscht ein einzelnes Buch aus der Datenbank.
-     * @param id: ID des zu löschenden Buches
+     * Löscht ein einzelnen Post aus der Datenbank.
+     * @param id: ID des zu löschenden Posts
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
-     */
-    async deleteBookById(id) {
-        return this._books.doc(id).delete();
-    }
+     */ /*
+    async deletePostById(id) {
+        return this._posts.doc(id).delete();
+    }*/
 
     /**
-     * Speichert die übergebenen Bücher in der Datenbank. Die hier übergebene
+     * Speichert die übergebenen Posts in der Datenbank. Die hier übergebene
      * Liste sollte folgenden Aufbau haben:
      *
      *      [
@@ -178,33 +189,34 @@ class Database {
      *          },
      *     ]
      *
-     * @param books: Liste mit den zu speichernden Objekten
+     * @param posts: Liste mit den zu speichernden Objekten
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
-    async saveBooks(books) {
+    async savePosts(posts) {
         let batch = this._db.batch();
 
-        books.forEach(book => {
-            let dbBook = this._books.doc(book.id);
-            batch.set(dbBook, book);
+        posts.forEach(post => {
+            let dbPost = this._posts.doc(post.id);
+            batch.set(dbPost, post);
         });
 
         return batch.commit();
     }
 
     /**
-     * Löscht eines oder mehrerer Bücher aus der Datenbank.
-     * @param ids: Liste der IDs der zu löschenden Bücher
+     * Löscht eines oder mehrerer Posts aus der Datenbank.
+     * @param ids: Liste der IDs der zu löschenden Posts
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
-    async deleteBooksById(ids) {
+     /*
+    async deletePostsById(ids) {
         let batch = this._db.batch();
 
         ids.forEach(id => {
-            let dbBook = this._books.doc(id);
-            batch.delete(dbBook);
+            let dbPost = this._posts.doc(id);
+            batch.delete(dbPost);
         });
 
         return batch.commit();
-    }
+    }*/
 }
