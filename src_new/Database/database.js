@@ -62,56 +62,22 @@ class Database {
         *    "title": "Reise nach Hamburg",
         *    "authors": "Leonie",
         *    "land": "Dautschland",
-        *    "date": "input",
+        *    "Datum": "11.05.2013",
         *    "content": "Es war eine schöne Reise.",
-        *    "picture": "img",
-        *
+        *    "picture": "img"
         */
 
 
         if (posts.length < 1) {
             this.savePosts([{
-                "authors": "Peter Pohmann",
-                "edition": "1. Auflage",
-                "id": "cpp17",
-                "publisher": "Entwickler-Press",
-                "title": "C++ 17 -- Praxiswissen zum Standard",
-                "year": 2017
-            }, {
-                "authors": "Kyle Loudon; Rainer Grimm",
-                "edition": "3. Auflage",
-                "id": "cpp-kurz-gut",
-                "publisher": "O'Reilly",
-                "title": "C++ Kurz & Gut",
-                "year": 2018
-            }, {
-                "authors": "Torsten T. Will",
-                "edition": "1. Auflage",
-                "id": "cpp-einfuehrung",
-                "publisher": "Galileo Computing",
-                "title": "Einführung in C++",
-                "year": 2015
-            }, {
-                "authors": "Dietmar Ratz; Dennis Schulmeister-Zimolong; Detlef Seese; Jan Wiesenberger",
-                "edition": "8. Auflage",
-                "id": "grundkurs-java",
-                "publisher": "Hanser-Verlag",
-                "title": "Grundkurs Programmieren in Java",
-                "year": 2018
-            }, {
-                "authors": "Dan Lüdtke",
-                "edition": "1. Auflage",
-                "id": "ip6-workshop",
-                "publisher": "Amazon Distribution",
-                "title": "IPv6 Workshop",
-                "year": 2013
-            }, {
-                "authors": "Thomas Peschel-Findeisen",
-                "edition": "1. Auflage",
-                "id": "make-gepackt",
-                "publisher": "mitp",
-                "title": "make ge-packt",
-                "year": 2004
+                "id": "1",
+                "title": "Reise nach Stockholm",
+                "authors": "Anna-Maria Vater",
+                "land": "Schweden",
+                "Datum": "24.06.2012",
+                "content": "Hallo liebe Leute, die Reise nach Stockholm war atemberaubend! :) "
+                "picture:"img"
+
             }]);
         }
     }
