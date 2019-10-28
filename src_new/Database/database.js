@@ -150,6 +150,7 @@ class Database {
      * @param id: ID des gesuchten Buches
      * @returns Promise-Objekt mit dem gesuchten Buch
      */
+
     async selectPostById(id) {
         let result = await this._posts.doc(id).get();
         return result.data();
@@ -178,10 +179,10 @@ class Database {
      * Löscht ein einzelnen Post aus der Datenbank.
      * @param id: ID des zu löschenden Posts
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
-     */ /*
+     */
     async deletePostById(id) {
         return this._posts.doc(id).delete();
-    }*/
+    }
 
     /**
      * Speichert die übergebenen Posts in der Datenbank. Die hier übergebene
@@ -219,7 +220,7 @@ class Database {
      * @param ids: Liste der IDs der zu löschenden Posts
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
-     /*
+
     async deletePostsById(ids) {
         let batch = this._db.batch();
 
@@ -229,5 +230,5 @@ class Database {
         });
 
         return batch.commit();
-    }*/
+    }
 }
