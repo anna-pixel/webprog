@@ -51,11 +51,11 @@ class PageOverview {
         let mainElement = pageDom.querySelector("main");
         let templateElement = pageDom.querySelector("#template-tile");
 
-        this._app.database.getAllRecords().forEach(blogbeitrag => {
+        this._app.database.getAllRecords().forEach(post => {
             let html = templateElement.innerHTML;
-            html = html.replace("{HREF}", `#/Detail/${blogbeitrag.id}`);
-            html = html.replace("{IMG}", foto.img);
-            html = html.replace("{NAME}", blogbeitrag.name);
+            html = html.replace("{HREF}", `#/Detail/${post.id}`);
+            html = html.replace("{IMG}", picture.img);
+            html = html.replace("{NAME}", post.name);
 
             mainElement.innerHTML += html;
         });
