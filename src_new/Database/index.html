@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Beispiel: Google Firebare</title>
+        <title>Beispiel: Google Firebase</title>
         <meta charset="utf-8" />
 
         <!-- Google Firebase -->
@@ -40,7 +40,7 @@
                         {title: "Land", field: "land",   editor: "input"},
                         {title: "Datum",    field: "date",      editor: "input"}
                 	 	{title: "Inhalt",  field: "content", editor: "input"},
-                	 	{title: "Bild",    field: "picture",      editor: "img"},
+                	 	/*{title: "Bild",    field: "picture",      editor: "img"},*/
                  	],
                 });
                 let database = new Database();
@@ -54,7 +54,7 @@
                         land: "",
                         date: "",
                         content: "",
-                        picture: "",
+                        /*picture: "",*/
                     }]);
                 }
                 /*async function deleteRows() {
@@ -69,7 +69,7 @@
                 }*/
                 async function reloadData() {
                     deletedIds = [];
-                    let posts = await database.selectAllBooks();
+                    let posts = await database.selectAllPosts();
                     table.replaceData(posts);
                 }
                 async function saveChanges() {
@@ -108,7 +108,7 @@
     </head>
     <body>
         <div id="alerts"></div>
-        <h3>Meine liebsten Fachbücher</h3>
+        <h3>Posts</h3>
 
         <div id="toolbar">
             <button id="button-insert-row"      type="button" class="btn btn-primary">Neuen Post anlegen</button>
