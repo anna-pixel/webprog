@@ -157,12 +157,13 @@ class Database {
      * Objekt sollte folgenden Aufbau haben:
      *
      *      {
-     *          id:        "MeinBuch1",
-     *          title:     "Name des Buches",
-     *          authors:   "Namen der Autoren",
-     *          edition:   "8. Auflage",
-     *          publisher: "Name des Verlags",
-     *          year:      2019,
+     *          "id": "nummer",
+     *          "title": "Titel des Posts",
+     *          "authors": "Name des Autors",
+     *          "land": "Name des Landes",
+     *          "Datum": "Datum der Reise",
+     *          "content": "Text des Posts",
+     *          "picture": "img"                momentan noch auskommentiert!!!
      *      }
      *
      * @param posts: Zu speicherndes Post-Objekt
@@ -186,12 +187,13 @@ class Database {
      *
      *      [
      *          {
-     *              id:        "MeinBuch1",
-     *              title:     "Name des Buches",
-     *              authors:   "Namen der Autoren",
-     *              edition:   "8. Auflage",
-     *              publisher: "Name des Verlags",
-     *              year:      2019,
+     *              "id": "nummer",
+     *              "title": "Titel des Posts",
+     *              "authors": "Name des Autors",
+     *              "land": "Name des Landes",
+     *              "Datum": "Datum der Reise",
+     *              "content": "Text des Posts",
+     *              "picture": "img"                momentan noch auskommentiert!!!
      *          }, {
      *              ...
      *          },
