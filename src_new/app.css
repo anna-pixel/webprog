@@ -224,11 +224,9 @@ main a:hover {
     outline: 0;
 }
 
-.dropdown-menu .show > .dropdown-toggle::after{
+.dropdown-toggle.active-dropdown::after {
     transform: rotate(-90deg);
 }
-
-
 //Quill-Container
 #editor-container {
   height: 400px;

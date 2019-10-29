@@ -25,108 +25,60 @@
     <body>
         <h1>Das hier wird ein Reiseblog.</h1>
 
-<!--NavTest-->
+<!--Navigationsleiste-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-<!-- Brand -->
-    <a class="navbar-brand" href="#">Home</a>
-
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <!-- Links -->
     <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">Australien</a></li>
-
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
     <!-- Dropdown -->
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Afrika</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Südafrika</a>
-                <a class="dropdown-item" href="#">Mauritius</a>
-                <a class="dropdown-item" href="#">Namibia</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Asien</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">China</a>
-                      <a class="dropdown-item" href="#">Indien</a>
-                      <a class="dropdown-item" href="#">Japan</a>
-                      <a class="dropdown-item" href="#">Südkorea</a>
-                  </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Europa</a>
-             <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">Deutschland</a>
-                <a href="#" class="dropdown-item">Frankreich</a>
-                <a href="#" class="dropdown-item">Niederlande</a>
-                <a href="#" class="dropdown-item">Schweden</a>
-                <a href="#" class="dropdown-item">Italien</a>
-               </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Nordamerika</a>
-            <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Amerika</a>
-                  <a href="#" class="dropdown-item">Kanada</a>
-            </div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">Neuen Blogbeitrag erstellen</a></li>
-    </ul>
-</nav>
-
-
-        <!--Navigationsleiste-->
-        <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Reiseziele </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <li><a class="dropdown-item" href="#">Australien</a></li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Afrika</a>
+                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Südafrika</a></li>
+                            <li><a class="dropdown-item" href="#">Mauritius</a><li>
+                            <li><a class="dropdown-item" href="#">Namibia</a><li>
+                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reiseziele</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Australien</a></li>
-                            <li><a class="dropdown-item dropdown-toggle" href="#">Afrika</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Südafrika</a></li>
-                                    <li><a class="dropdown-item" href="#">Namibia</a></li>
-                                    <li><a class="dropdown-item" href="#">Mauritius</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item dropdown-toggle" href="#">Asien</a>
-                                  <ul class="dropdown-menu">
-                                    <li><a href="#" class="dropdown-item">China</a></li>
-                                    <li><a href="#" class="dropdown-item">Indien</a></li>
-                                    <li><a href="#" class="dropdown-item">Japan</a></li>
-                                    <li><a href="#" class="dropdown-item">Südkorea</a></li>
-                                  </ul>
-                            </li>
-                            <li><a class="dropdown-item dropdown-toggle" href="#">Europa</a>
-                                  <ul class="dropdown-menu">
-                                    <li><a href="#" class="dropdown-item">Deutschland</a></li>
-                                    <li><a href="#" class="dropdown-item">Frankreich</a></li>
-                                    <li><a href="#" class="dropdown-item">Niederlande</a></li>
-                                    <li><a href="#" class="dropdown-item">Schweden</a></li>
-                                    <li><a href="#" class="dropdown-item">Italien</a></li>
-                                  </ul>
-                            </li>
-                            <li><a class="dropdown-item dropdown-toggle" href="#">Nordamerika</a>
-                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
-                                      <li><a href="#" class="dropdown-item">Amerika</a></li>
-                                      <li><a href="#" class="dropdown-item">Kanada</a></li>
-                                    </ul>
-                            </li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Asien</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">China</a></li>
+                            <li><a class="dropdown-item" href="#">Japan</a></li>
+                            <li><a class="dropdown-item" href="#">Indien</a></li>
+                            <li><a class="dropdown-item" href="#">Südkorea</a></li>
                         </ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Neuen Blogbeitrag erstellen</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    </li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Europa</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Deutschland</a></li>
+                            <li><a class="dropdown-item" href="#">Frankreich</a></li>
+                            <li><a class="dropdown-item" href="#">England</a></li>
+                            <li><a class="dropdown-item" href="#">Schweden</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Nordamerika</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kanada</a></li>
+                            <li><a class="dropdown-item" href="#">USA</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Südamerika</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Brasilien</a></li>
+                            <li><a class="dropdown-item" href="#">Ecuador</a></li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-        </nav>
-    -->
-
+                <li class="nav-item"><a class="nav-link" href="#">Neuen Blogbeitrag erstellen</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+</nav>
 
         <!-- Create the Quill editor container -->
         <div id="editor">
