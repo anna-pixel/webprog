@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c274a09-8d2f-4692-844c-0ac25c59eab3" name="Default Changelist" comment="" />
+    <list default="true" id="5c274a09-8d2f-4692-844c-0ac25c59eab3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-overview/page-overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-overview/page-overview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-overview/page-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-overview/page-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_new/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_new/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/database.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,74 +43,10 @@
     <option name="width" value="2022" />
     <option name="height" value="1840" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="boats" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fontello" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="page-detail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="page-not-found" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProg-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProg-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src_new" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mobile Webapplikation/Mobile Bildergallerie/Loesung" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
@@ -134,35 +73,5 @@
       <updated>1572252196186</updated>
     </task>
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.21733244" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32977462" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Palette&#9;" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
