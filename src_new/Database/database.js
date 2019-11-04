@@ -66,8 +66,6 @@ class Database {
         *    "content": "Es war eine schöne Reise.",
         *    "picture": "img"
         */
-
-
         if (posts.length < 1) {
             this.savePosts([{
                 "id": "1",
@@ -79,7 +77,7 @@ class Database {
                 /** "picture:"https://upload.wikimedia.org/wikipedia/commons/c/c3/Stockholm.jpg" */
             },{
                 "id": "2",
-                "title": "Roadtrip entlang der grichischen Küste",
+                "title": "Roadtrip entlang der griechischen Küste",
                 "authors": "Henriette Wien",
                 "land": "Griechenland",
                 "Datum": "12.10.2015",
@@ -90,7 +88,7 @@ class Database {
                 "title": "Wochenendausflug nach Paris",
                 "authors": "Leonie Neis",
                 "land": "Frankreich",
-                "Datum": "14-02-2008",
+                "Datum": "14.02.2008",
                 "content": "Hallo Freunde der Reiselust, heute berichte ich euch von meinem Wochenendausflug in die Stadt der Liebe. "
                 /** "picture:"https://upload.wikimedia.org/wikipedia/de/c/cf/Paris_Montage_Ancient_and_Modern.png" */
             },{
@@ -98,8 +96,8 @@ class Database {
                 "title": "Kulinarische Genüsse in Rom",
                 "authors": "Leonie Neis",
                 "land": "Italien",
-                "Datum": "05-08.2016",
-                "content": "Ciao Cioa amici, kennt ihr schon die 10 besten Restaurnts in ganz Rom?"
+                "Datum": "05.08.2016",
+                "content": "Ciao amici, kennt ihr schon die 10 besten Restaurants in ganz Rom?"
               /**  "picture:"https://upload.wikimedia.org/wikipedia/commons/a/ae/Pasta-Herstellung.jpg" */
             },{
                 "id": "5",
@@ -115,7 +113,7 @@ class Database {
                 "authors": "Anna-Maria Vater",
                 "land": "Japan",
                 "Datum": "25.11.2018",
-                "content": "Hallo Freunde, in diesem Post bereichte ich über meine Erlebnnisse in der einstigen, japanischen Hauptstadt Kyoto."
+                "content": "Hallo Freunde, in diesem Post berichte ich über meine Erlebnnisse in der ehemaligen, japanischen Hauptstadt Kyoto."
                 /**"picture:"https://upload.wikimedia.org/wikipedia/commons/f/f0/150124_At_Yasakakamimachi_Kyoto_Japan01n.jpg */
             }]);
         }
@@ -130,7 +128,7 @@ class Database {
      * @returns Promise-Objekt mit den gespeicherten Posts
      */
     async selectAllPosts() {
-        let result = await this._posts.orderBy("land").get();
+        let result = await this._posts.orderBy("id").get();
         let posts = [];
 
         result.forEach(entry => {
