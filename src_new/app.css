@@ -214,7 +214,7 @@ main a:hover {
     color: red;
 }
 
-//Navigationsleiste
+/*Navigationsleiste*/
 .navbar-light .navbar-nav .nav-link {
     color: rgb(64, 64, 64);
 }
@@ -227,7 +227,13 @@ main a:hover {
 .dropdown-toggle.active-dropdown::after {
     transform: rotate(-90deg);
 }
+<<<<<<< HEAD
+
+
+/*Quill-Container*/
+=======
 //Quill-Container
+>>>>>>> d10c1ca15fd5c3160d1ed552cb162a8032081a70
 #editor-container {
   height: 400px;
 }

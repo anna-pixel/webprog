@@ -10,8 +10,18 @@
         <script src="app.js"></script>
         <link rel="stylesheet" href="app.css" />
 
+        <!-- Include Bootstrap CSS -->
+        <link
+                rel="stylesheet"
+                href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+
         <!-- Klasse Database: Verwaltet die Daten der Anwendung -->
         <script src="database.js"></script>
+
+        <script src="navbar.js"></script>
+        <link rel="stylesheet" href="navbar.css">
 
         <!-- Klassen für die einzelnen App-Seiten -->
         <script src="page-overview/page-overview.js"></script>
@@ -88,6 +98,55 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- unsere Navbar -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Home</a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Australien</a></li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Afrika</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Südafrika</a>
+                            <a class="dropdown-item" href="#">Mauritius</a>
+                            <a class="dropdown-item" href="#">Namibia</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Asien</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">China</a>
+                            <a class="dropdown-item" href="#">Indien</a>
+                            <a class="dropdown-item" href="#">Japan</a>
+                            <a class="dropdown-item" href="#">Südkorea</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Europa</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Deutschland</a>
+                            <a href="#" class="dropdown-item">Frankreich</a>
+                            <a href="#" class="dropdown-item">Niederlande</a>
+                            <a href="#" class="dropdown-item">Schweden</a>
+                            <a href="#" class="dropdown-item">Italien</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nordamerika</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Amerika</a>
+                            <a href="#" class="dropdown-item">Kanada</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Neuen Blogbeitrag erstellen</a></li>
+                </ul>
+            </nav>
+            <!-- unsere navbar ende -->
 
             <div class="content">
                 Inhalt des Kopfbereichs
