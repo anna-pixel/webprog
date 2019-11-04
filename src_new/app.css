@@ -18,7 +18,7 @@ html {
 
     /* https://pixabay.com/photos/ship-boat-lake-sailing-boat-italy-952292/ */
     background-color: black;
-    background-image: url(background.jpg);
+
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -227,13 +227,10 @@ main a:hover {
 .dropdown-toggle.active-dropdown::after {
     transform: rotate(-90deg);
 }
-<<<<<<< HEAD
+
 
 
 /*Quill-Container*/
-=======
-//Quill-Container
->>>>>>> d10c1ca15fd5c3160d1ed552cb162a8032081a70
 #editor-container {
   height: 400px;
 }
