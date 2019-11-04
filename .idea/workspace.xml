@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5c274a09-8d2f-4692-844c-0ac25c59eab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_new/Database/database.html" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/database.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_new/Database/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_new/Database/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-overview/page-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-overview/page-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-overview/page-overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-overview/page-overview.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,10 +37,14 @@
       </list>
     </option>
   </component>
+  <component name="ProjectId" id="1T9cybTl3HQ10Clv6KQSgroUFJs" />
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mobile Webapplikation/Mobile Bildergallerie/Loesung" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
@@ -62,7 +69,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572252196186</updated>
+      <workItem from="1572876011431" duration="2190000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
