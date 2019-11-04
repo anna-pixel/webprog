@@ -224,12 +224,16 @@ main a:hover {
     outline: 0;
 }
 
-.dropdown-menu .show > .dropdown-toggle::after{
+.dropdown-toggle.active-dropdown::after {
     transform: rotate(-90deg);
 }
+<<<<<<< HEAD
 
 
 /*Quill-Container*/
+=======
+//Quill-Container
+>>>>>>> d10c1ca15fd5c3160d1ed552cb162a8032081a70
 #editor-container {
   height: 400px;
 }
