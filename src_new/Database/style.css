@@ -7,7 +7,7 @@ html {
 body {
     padding: 1em;
     background: rgb(242,242,242);
-    background-image: url(bg.png);
+    /*background-image: url(bg.png);*/
 
     display: flex;
     flex-direction: column;

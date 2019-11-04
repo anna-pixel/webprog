@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5c274a09-8d2f-4692-844c-0ac25c59eab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_new/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_new/Database/database.html" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/database.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_new/Database/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_new/Database/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +33,6 @@
         <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="42" />
-    <option name="width" value="2022" />
-    <option name="height" value="1840" />
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
