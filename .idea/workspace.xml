@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c274a09-8d2f-4692-844c-0ac25c59eab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_new/Database/database.html" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/database.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_new/Database/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_new/Database/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src_new/Database/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +31,11 @@
       </list>
     </option>
   </component>
+  <component name="ProjectId" id="1TBlEUbHJrm4T0sFTnsqXMaRyJA" />
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mobile Webapplikation/Mobile Bildergallerie/Loesung" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
