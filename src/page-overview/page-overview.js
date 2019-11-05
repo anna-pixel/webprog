@@ -56,6 +56,7 @@ class PageOverview {
             let html = countryTemplateElement.innerHTML;
             html = html.replace("{ID}", country.id);
             html = html.replace("{NAME}", country.name);
+            html = html.replace("{IMG}", country.img)
 
             mainElement.innerHTML += html;
         });

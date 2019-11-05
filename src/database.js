@@ -44,14 +44,6 @@ class Database {
     /**
      * Hilfsfunktion zum Anlegen von Demodaten. Die Daten werden nur angelegt,
      * wenn die Collection komplett leer ist.
-     *
-     * Beachte, dass das Auslesen aller Datensätze keine gute Idee ist, weil
-     * Firebase für jedes abgerufene Dokument eine Gebühr verlangt, wenn man
-     * keinen kostenlosten Account hat. Dummerweise gibt es aber keine einfache
-     * Funktion zum Ermitteln der Anzahl Datensätze. Siehe:
-     *
-     * https://stackoverflow.com/questions/46554091/cloud-firestore-collection-count
-     *
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
     async createDemoData() {
@@ -62,12 +54,15 @@ class Database {
             this.saveCountries([{
                 "id": "FR",
                 "name": "Frankreich",
+                "img": "http://www.all-free-photos.com/images/chateaux-4/PI5987-hr.jpg",
             }, {
                 "id": "DE",
                 "name": "Deutschland",
+                "img": "http://www.all-free-photos.com/images/berlin/PI88750-hr.jpg",
             }, {
                 "id": "SE",
                 "name": "Schweden",
+                "img": "http://www.all-free-photos.com/images/berlin/PI88750-hr.jpg",
             }, {
                 "id": "GR",
                 "name": "Griechenland",
@@ -170,73 +165,59 @@ class Database {
     }
 
     /**
-     * Gibt ein einzelnes Buch anhand seiner ID zurück.
-     * @param id: ID des gesuchten Buches
-     * @returns Promise-Objekt mit dem gesuchten Buch
+     * Gibt ein einzelnen Post anhand seiner ID zurück.
+     * @param id: ID des gesuchten Posts
+     * @returns Promise-Objekt mit dem gesuchten Posts
      */
     async selectPostById(id) {
         let result = await this._posts.doc(id).get();
         return result.data();
     }
 
+    /**
+     * Gibt ein einzelnes Country anhand seiner ID zurück.
+     * @param id: ID des gesuchten Country
+     * @returns Promise-Objekt mit dem gesuchten County
+     */
     async selectCountryById(id) {
         let result = await this._countries.doc(id).get();
         return result.data();
     }
 
     /**
-     * Speichert ein einzelnes Buch in der Datenbank. Das hierfür übergebene
-     * Objekt sollte folgenden Aufbau haben:
-     *
-     *      {
-     *          id:        "MeinBuch1",
-     *          title:     "Name des Buches",
-     *          authors:   "Namen der Autoren",
-     *          edition:   "8. Auflage",
-     *          publisher: "Name des Verlags",
-     *          year:      2019,
-     *      }
-     *
-     * @param books: Zu speicherndes Buch-Objekt
+     * Speichert einzelnen Post in der Datenbank.
+     * @param books: Zu speicherndes Post-Objekt
      */
     savePost(post) {
         this._posts.doc(post.id).set(post);
     }
-
+    /**
+     * Speichert einzelnes Country in der Datenbank.
+     * @param books: Zu speicherndes Country-Objekt
+     */
     saveCountry(country) {
         this._countries.doc(country.id).set(country);
     }
 
     /**
-     * Löscht ein einzelnes Buch aus der Datenbank.
-     * @param id: ID des zu löschenden Buches
+     * Löscht ein einzelnen Post aus der Datenbank.
+     * @param id: ID des zu löschenden Posts
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
     async deletePostById(id) {
         return this._posts.doc(id).delete();
     }
-
+    /**
+     * Löscht ein einzelnes Country aus der Datenbank.
+     * @param id: ID des zu löschenden Country
+     * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
+     */
     async deleteCountryById(id) {
         return this._countries.doc(id).delete();
     }
 
     /**
-     * Speichert die übergebenen Bücher in der Datenbank. Die hier übergebene
-     * Liste sollte folgenden Aufbau haben:
-     *
-     *      [
-     *          {
-     *              id:        "MeinBuch1",
-     *              title:     "Name des Buches",
-     *              authors:   "Namen der Autoren",
-     *              edition:   "8. Auflage",
-     *              publisher: "Name des Verlags",
-     *              year:      2019,
-     *          }, {
-     *              ...
-     *          },
-     *     ]
-     *
+     * Speichert die übergebenen Posts in der Datenbank.
      * @param posts: Liste mit den zu speichernden Objekten
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
@@ -250,7 +231,11 @@ class Database {
 
         return batch.commit();
     }
-
+    /**
+     * Speichert die übergebenen Countries in der Datenbank.
+     * @param posts: Liste mit den zu speichernden Objekten
+     * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
+     */
     async saveCountries(countries) {
         let batch = this._db.batch();
 
@@ -263,8 +248,8 @@ class Database {
     }
 
     /**
-     * Löscht eines oder mehrerer Bücher aus der Datenbank.
-     * @param ids: Liste der IDs der zu löschenden Bücher
+     * Löscht ein oder mehrerer Posts aus der Datenbank.
+     * @param ids: Liste der IDs der zu löschenden Posts
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
     async deletePostsById(ids) {
@@ -277,7 +262,11 @@ class Database {
 
         return batch.commit();
     }
-
+    /**
+     * Löscht ein oder mehrerer Countries aus der Datenbank.
+     * @param ids: Liste der IDs der zu löschenden Countries
+     * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
+     */
     async deleteCountriesById(ids) {
         let batch = this._db.batch();
 

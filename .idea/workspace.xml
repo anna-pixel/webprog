@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c274a09-8d2f-4692-844c-0ac25c59eab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page-overview/page-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-overview/page-overview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page-overview/page-overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-overview/page-overview.js" afterDir="false" />
     </list>
@@ -69,7 +66,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572252196186</updated>
-      <workItem from="1572876011431" duration="2190000" />
+      <workItem from="1572876011431" duration="2367000" />
+      <workItem from="1572888732137" duration="2071000" />
+      <workItem from="1572942867055" duration="1248000" />
     </task>
     <servers />
   </component>
@@ -81,7 +80,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
