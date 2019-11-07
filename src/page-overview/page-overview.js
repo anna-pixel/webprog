@@ -32,7 +32,7 @@ class PageOverview {
         let pageDom = document.createElement("div");
         pageDom.innerHTML = html;
 
-        this._renderBoatTiles(pageDom);
+        await this._renderCountries(pageDom);
 
         this._app.setPageTitle("Startseite");
         this._app.setPageCss(css);
@@ -41,21 +41,22 @@ class PageOverview {
     }
 
     /**
-     * Hilfsmethode, welche den HTML-Code zur Darstellung der Kacheln auf
-     * der Startseite erzeugt.
+     * Darstellung der Länder  auf der Startseite erzeugen.
      *
      * @param {HTMLElement} pageDom Wurzelelement der eingelesenen HTML-Datei
      * mit den HTML-Templates dieser Seite.
      */
-    _renderBoatTiles(pageDom) {
+    async _renderCountries(pageDom) {
         let mainElement = pageDom.querySelector("main");
-        let templateElement = pageDom.querySelector("#template-tile");
+        let countryTemplateElement = pageDom.querySelector("#template-country");
 
-        this._app.database.getAllRecords().forEach(boat => {
-            let html = templateElement.innerHTML;
-            html = html.replace("{HREF}", `#/Detail/${boat.id}`);
-            html = html.replace("{IMG}", boat.img);
-            html = html.replace("{NAME}", boat.name);
+        let countries = await this._app.database.selectAllCountries();
+
+        countries.forEach(country => {
+            let html = countryTemplateElement.innerHTML;
+            html = html.replace("{ID}", country.id);
+            html = html.replace("{NAME}", country.name);
+            html = html.replace("{IMG}", country.img)
 
             mainElement.innerHTML += html;
         });
