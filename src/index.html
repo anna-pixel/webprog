@@ -46,8 +46,8 @@
                     url: "^/$",
                     klass: PageOverview,
                 },{
-                    url: "^/Detail/(.*)$",
-                    klass: PageDetail,
+                    url: "^/Post/(.*)$",
+                    klass: Post,
                 },{
                     url: ".*",
                     klass: PageNotFound,
@@ -73,7 +73,7 @@
                     <li class="go-back">
                         <a href="#">
                             <i class="icon-left-open"></i>
-                            <span class="page-name">Name der Seite</span>
+                            <span class="page-name">Startseite</span>
                         </a>
                     </li>
                     <li class="dont-go-back hidden">
@@ -148,7 +148,7 @@
                             <a href="#" class="dropdown-item">Kanada</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Neuer Post</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#/Post/">Neuer Post</a></li>
                 </ul>
             </nav>
             <!-- unsere navbar ende -->
