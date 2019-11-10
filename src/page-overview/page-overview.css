@@ -6,7 +6,7 @@
     display: inline-block;
 
     border: 1px solid lightgrey;
-    background: rgb(250, 250, 250);
+    background: rgba(250, 250, 250);
     padding: 0.5em;
     margin: 0.5em;
 
@@ -29,13 +29,13 @@
 }
 
 .tile:hover {
-    background: blue;
+    background: white;
     transform: scale(1.01) rotate(0.5deg);
     cursor: pointer;
 }
 
 /*Card-Layout*/
-#city:hover {
+/*#city:hover {
     filter: grayscale(50%);
 }
 
@@ -90,6 +90,6 @@
 .card:nth-of-type(3) {
     clear: both;
 }
-
+*/
 
 

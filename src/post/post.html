@@ -10,8 +10,16 @@
     <meta charset="UTF-8">
     <title>Neuen Post erstellen</title>
 </head>
-<body>
+<main>
 <h1>Post erstellen</h1>
+<div class="sonstigeInfos">
+    <div id="name">
+        <input type="text" name="Name" placeholder="Name">
+    </div><br>
+    <div id="datum">
+        <input type="date" name="Datum">
+    </div><br>
+</div>
 <!-- Create the Quill editor container -->
 <div id="editor">
     <p>Hallo Weltenbummler!</p>
@@ -26,16 +34,9 @@
     });
 </script>
 
-<div class="sonstigeInfos">
-    <div id="name">
-        <input type="text" name="Name" placeholder="Name">
-    </div><br>
-    <div id="datum">
-        <input type="date" name="Datum">
-    </div><br>
     <div class="button">
         <button type="button" id="senden">Post veröffentlichen</button>
     </div>
 
-</body>
+</main>
 </html>

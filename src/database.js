@@ -73,7 +73,7 @@ class Database {
                 "id": "US",
                 "name": "Amerika",
             }, {
-                "id": "JA",
+                "id": "JP",
                 "name": "Japan",
             }]);
         }
@@ -121,7 +121,7 @@ class Database {
                 "id": "6",
                 "title": "Begegnung mit einer Geisha in Kyoto",
                 "author": "Anna",
-                "land": "JA",
+                "land": "JP",
                 "content": "Hallo Freunde, in diesem Post berichte ich über meine Erlebnnisse in der ehemaligen, japanischen Hauptstadt Kyoto.",
                 "year": 2019,
             }]);
@@ -186,14 +186,14 @@ class Database {
 
     /**
      * Speichert einzelnen Post in der Datenbank.
-     * @param books: Zu speicherndes Post-Objekt
+     * @param post: Zu speicherndes Post-Objekt
      */
     savePost(post) {
         this._posts.doc(post.id).set(post);
     }
     /**
      * Speichert einzelnes Country in der Datenbank.
-     * @param books: Zu speicherndes Country-Objekt
+     * @param country: Zu speicherndes Country-Objekt
      */
     saveCountry(country) {
         this._countries.doc(country.id).set(country);
@@ -233,7 +233,7 @@ class Database {
     }
     /**
      * Speichert die übergebenen Countries in der Datenbank.
-     * @param posts: Liste mit den zu speichernden Objekten
+     * @param countries: Liste mit den zu speichernden Objekten
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
     async saveCountries(countries) {
