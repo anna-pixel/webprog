@@ -62,6 +62,13 @@ body {
 .dropdown-menu{
     background-color:#333333 !important;
 }
+
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:hover{
+    background-color: #343a40 !important;
+}
 /*
  * KOPFBEREICH
  */
@@ -206,9 +213,11 @@ header .content h6 {
  * HAUPTBEREICH
  */
 main {
+    display: flex !important;
+    flex-wrap: wrap !important;
     padding: var(--content-padding);
     background: rgba(240,240,240, 0.9);
-    flex: 1;
+
 }
 
 /*main a,
