@@ -14,12 +14,17 @@
     transform: scale(1);
 }
 
-.tile img {
+/*.tile img {
     width: 20em;
     height: 20em;
     max-width: 100%;
     object-fit: cover;
     display: block;
+}*/
+
+a {
+    text-decoration: none;
+
 }
 
 .tile a,
@@ -33,6 +38,8 @@
     transform: scale(1.01) rotate(0.5deg);
     cursor: pointer;
 }
+
+
 
 /*Card-Layout*/
 /*#city:hover {
