@@ -59,8 +59,8 @@ body {
 .hidden {
     display: none !important;
 }
-.navbar-nav .open .dropdown-menu {
-    background-color:#333333;
+.dropdown-menu{
+    background-color:#333333 !important;
 }
 /*
  * KOPFBEREICH
@@ -103,7 +103,7 @@ header nav a,
 header nav a:visited {
     color: var(--text-color);
     text-decoration: none;
-    transition: color 0.25s;
+    /*transition: color 0.25s;*/
 }
 
 header nav a:hover {
