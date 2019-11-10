@@ -99,21 +99,21 @@ header nav li {
 }
 
 /* Link-Farben */
-header nav a,
+/*header nav a,
 header nav a:visited {
     color: var(--text-color);
     text-decoration: none;
-    /*transition: color 0.25s;*/
-}
+    transition: color 0.25s;
+}*/
 
 header nav a:hover {
     color: var(--icon-color);
 }
 
-header nav a i,
+/*header nav a i,
 header nav a:visited i {
     color: var(--icon-color);
-}
+}*/
 
 header nav a:hover i {
     color: var(--text-color);
@@ -211,7 +211,7 @@ main {
     flex: 1;
 }
 
-main a,
+/*main a,
 main a:visited {
     color: crimson;
     text-decoration: underline;
@@ -220,4 +220,4 @@ main a:visited {
 
 main a:hover {
     color: red;
-}
+}*/

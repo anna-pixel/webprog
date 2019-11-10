@@ -22,9 +22,9 @@
     display: block;
 }*/
 
-a {
+.btn-primary{
+    color: white;
     text-decoration: none;
-
 }
 
 .tile a,
@@ -39,6 +39,9 @@ a {
     cursor: pointer;
 }
 
+.card{
+
+}
 
 
 /*Card-Layout*/
