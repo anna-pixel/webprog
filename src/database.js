@@ -155,6 +155,14 @@ class Database {
                 "land": "JP",
                 "content": "Hallo Freunde, in diesem Post berichte ich über meine Erlebnnisse in der ehemaligen, japanischen Hauptstadt Kyoto.",
                 "year": 2019,
+            }, {
+                "id": "7",
+                "title": "Backpacking durch das Outback",
+                "author": "Henriette",
+                "land": "AUS",
+                "content": "EXCITING news from Australia! Wir sind mit dem Rucksack am Uluru gewandert und haben nachts viele Sterne gesehen.",
+                "year": 2019,
+                "img": "https://www.ozeanien-entdecken.de/img/reisen/Australien__Hoehepunkte_1899_1.jpg"
             }]);
         }
     }
