@@ -91,10 +91,10 @@ class Database {
                 "id": "NA",
                 "name": "Namibia",
             }, {
-                "id": "CH",
+                "id": "CNA",
                 "name": "China",
             },{
-                "id": "IN",
+                "id": "IND",
                 "name": "Indien",
             },{
                 "id": "SC",
@@ -131,6 +131,7 @@ class Database {
                 "land": "FR",
                 "content": "Hallo Freunde der Reiselust, heute berichte ich euch von meinem Wochenendausflug in die Stadt der Liebe.",
                 "year": 2019,
+                "img": "http://www.all-free-photos.com/images/chateaux-4/PI5987-hr.jpg",
             }, {
                 "id": "4",
                 "title": "Kulinarische Genüsse in Rom",
@@ -138,13 +139,15 @@ class Database {
                 "land": "IT",
                 "content": "Ciao amici, kennt ihr schon die 10 besten Restaurants in ganz Rom?",
                 "year": 2019,
+                "img": "",
             }, {
                 "id": "5",
                 "title": "Roadtrip durch die USA",
                 "author": "Henriette",
                 "land": "US",
-                "content": "Heey friends, der Roadtrip entlang der Route 66 war LIFECHANGING!",
+                "content": "Hey friends, der Roadtrip entlang der Route 66 war LIFECHANGING!",
                 "year": 2019,
+                "img": "https://www.connections.be/~/media/images/connections/wom/north-america/new-usa/usa-west/route-66/route-66-n-america-usa-straight-road.jpg"
             }, {
                 "id": "6",
                 "title": "Begegnung mit einer Geisha in Kyoto",

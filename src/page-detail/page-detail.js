@@ -66,7 +66,7 @@ class PageDetail {
                 html = html.replace("{TITLE}", post.title);
                 html = html.replace("{AUTHOR}", post.author);
                 html = html.replace("{CONTENT}", post.content);
-
+                html = html.replace("{IMG}", post.img);
                 mainElement.innerHTML += html;
             }
         });
