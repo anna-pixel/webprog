@@ -10,7 +10,7 @@ class PageDetail {
      */
     constructor(app) {
         this._app = app;
-        this._recordId = -1;
+        this._recordLand = -1;
         this._data = null;
     }
 
@@ -19,8 +19,8 @@ class PageDetail {
      */
     async show(matches) {
         // URL-Parameter auswerten
-        this._recordId = matches[1];
-        this._data = this._app.database.getRecordById(this._recordId);
+        this._recordLand = matches[1];
+        this._data = await this._app.database.selectAllPosts();
 
         // Anzuzeigenden Seiteninhalt nachladen
         let html = await fetch("page-detail/page-detail.html");
@@ -35,9 +35,12 @@ class PageDetail {
         }
 
         // Seite zur Anzeige bringen
-        let pageDom = this._processTemplate(html);
+        let pageDom = document.createElement("div");
+        pageDom.innerHTML = html;
 
-        this._app.setPageTitle(`Segelschiff ${this._data.name}`, {isSubPage: true});
+        await this._renderPosts(pageDom);
+
+        this._app.setPageTitle(`Land ${this._recordLand}`, {isSubPage: true});
         this._app.setPageCss(css);
         this._app.setPageHeader(pageDom.querySelector("header"));
         this._app.setPageContent(pageDom.querySelector("main"));
@@ -51,33 +54,21 @@ class PageDetail {
      * @param {HTMLElement} pageDom Wurzelelement der eingelesenen HTML-Datei
      * mit den HTML-Templates dieser Seite.
      */
-    _processTemplate(html) {
-        // Platzhalter mit den eingelesenen Daten ersetzen
-        html = html.replace(/{IMG}/g, this._data.img);
-        html = html.replace(/{NAME}/g, this._data.name);
-        html = html.replace(/{TYP}/g, this._data.typ);
-        html = html.replace(/{STAPELLAUF}/g, this._data.stapellauf);
-        html = html.replace(/{VERBLEIB}/g, this._data.verbleib);
-        html = html.replace(/{LINK}/g, this._data.link);
 
-        // HTML-Template in echte DOM-Objekte umwandeln, damit wir es mit den
-        // DOM-Methoden von JavaScript weiterbearbeiten können
-        let pageDom = document.createElement("div");
-        pageDom.innerHTML = html;
+    async _renderPosts(pageDom) {
+        let mainElement = pageDom.querySelector("main");
+        let countryTemplateElement = pageDom.querySelector("#template-post");
 
-        // Event Handler für den Button registrieren
-        pageDom.querySelectorAll(".id").forEach(e => e.textContent = this._recordId);
-        pageDom.querySelector("#show-more-button").addEventListener("click", () => this._onShowMoreButtonClicked());
+        this._data.forEach(post => {
+            if(this._recordLand === post.land) {
+                let html = countryTemplateElement.innerHTML;
+                html = html.replace("{YEAR}", post.year);
+                html = html.replace("{TITLE}", post.title);
+                html = html.replace("{AUTHOR}", post.author);
+                html = html.replace("{CONTENT}", post.content);
 
-        // Fertig bearbeitetes HTML-Element zurückgeben
-        return pageDom;
-    }
-
-    /**
-     * Beispiel für einen einfachen Event Handler, der bei Klick auf einen
-     * Button aufgerufen wird.
-     */
-    _onShowMoreButtonClicked() {
-        alert(this._data.name);
+                mainElement.innerHTML += html;
+            }
+        });
     }
 }

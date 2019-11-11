@@ -137,12 +137,14 @@ class Database {
      * @returns Promise-Objekt mit den gespeicherten Büchern
      */
     async selectAllPosts() {
-        let result = await this._posts.orderBy("title").get();
+        let result = await this._posts.orderBy("year").get();
         let posts = [];
 
         result.forEach(entry => {
-            let post = entry.data();
-            posts.push(post);
+
+                let post = entry.data();
+                posts.push(post);
+
         });
 
         return posts;

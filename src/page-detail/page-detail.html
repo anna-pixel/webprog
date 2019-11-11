@@ -1,60 +1,16 @@
 <header>
-    <div class="page-heading">
-        <img src="{IMG}" alt="" />
-        <div>
-            <h1>{NAME}</h1>
+    <h1>Posts</h1>
+</header>
+<main>
 
-            <div class="boat-info">
-                <div class="field">
-                    <div class="label">
-                        Typ:
-                    </div>
-                    <div class="value">
-                        {TYP}
-                    </div>
-                </div>
+</main>
 
-                    <div class="field">
-                    <div class="label">
-                        Stapellauf:
-                    </div>
-                    <div class="value">
-                        {STAPELLAUF}
-                    </div>
-                </div>
-
-                <div class="field">
-                    <div class="label">
-                        Verbleib:
-                    </div>
-                    <div class="value">
-                        {VERBLEIB}
-                    </div>
-                </div>
-            </div>
+<div id="template-post" >
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{TITLE}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{AUTHOR}, {YEAR}</h6>
+            <p class="card-text">{CONTENT}</p>
         </div>
     </div>
-
-    <ul class="tab-buttons">
-        <li class="active">
-            Übersicht
-        </li>
-        <li>
-            Detailbeschreibung
-        </li>
-        <li>
-            Fotogallerie
-        </li>
-    </ul>
-</header>
-
-<main>
-    <img src="{IMG}" alt="" />
-    
-    <p>
-        Hier sollten irgendwelche Details zum Segelschiff {NAME} stehen. <br />
-        Stattdessen gibt es hier nur einen Link zum
-        <a href="{LINK}" target="_blank">Wikipedia-Artikel</a>.
-    </p>
-    <button id="show-more-button">Und einen Button</button>
-</main>
+</div>

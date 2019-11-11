@@ -30,6 +30,8 @@
         <script src="page-overview/page-overview.js"></script>
         <script src="post/post.js"></script>
         <script src="page-not-found/page-not-found.js"></script>
+        <script src="page-detail/page-detail.js"></script>
+
 
         <!-- Fontello Icon Font (generiert auf fontello.com) -->
         <link rel="stylesheet" href="fontello/css/fontello.css" />
@@ -48,6 +50,9 @@
                 },{
                     url: "^/Post/$",
                     klass: Post,
+                },{
+                    url: "^/Country/(.*)$",
+                    klass: PageDetail,
                 },{
                     url: ".*",
                     klass: PageNotFound,
@@ -115,34 +120,35 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown">Afrika</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Südafrika</a>
-                            <a class="dropdown-item" href="#">Mauritius</a>
-                            <a class="dropdown-item" href="#">Namibia</a>
+                            <a href="#" class="dropdown-item" >Südafrika</a>
+                            <a href="#" class="dropdown-item">Mauritius</a>
+                            <a href="#" class="dropdown-item" >Namibia</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Asien</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">China</a>
-                            <a class="dropdown-item" href="#">Indien</a>
-                            <a class="dropdown-item" href="#">Japan</a>
-                            <a class="dropdown-item" href="#">Südkorea</a>
+                            <a href="#/Country/CNA" class="dropdown-item" >China</a>
+                            <a href="#/Country/IND" class="dropdown-item" >Indien</a>
+                            <a href="#/Country/JA" class="dropdown-item" >Japan</a>
+                            <a href="#/Country/SC" class="dropdown-item" >Südkorea</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Europa</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Deutschland</a>
-                            <a href="#" class="dropdown-item">Frankreich</a>
-                            <a href="#" class="dropdown-item">Niederlande</a>
-                            <a href="#" class="dropdown-item">Schweden</a>
-                            <a href="#" class="dropdown-item">Italien</a>
+                            <a href="#/Country/DE" class="dropdown-item">Deutschland</a>
+                            <a href="#/Country/FR" class="dropdown-item">Frankreich</a>
+                            <a href="#/Country/NL" class="dropdown-item">Niederlande</a>
+                            <a href="#/Country/SE" class="dropdown-item">Schweden</a>
+                            <a href="#/Country/IT" class="dropdown-item">Italien</a>
+                            <a href="#/Country/GR" class="dropdown-item">Griechenland</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nordamerika</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Amerika</a>
+                            <a href="#/Country/US" class="dropdown-item">Amerika</a>
                             <a href="#" class="dropdown-item">Kanada</a>
                         </div>
                     </li>
