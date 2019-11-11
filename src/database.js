@@ -75,7 +75,35 @@ class Database {
             }, {
                 "id": "JP",
                 "name": "Japan",
-            }]);
+            }, {
+                "id": "AUS",
+                "name": "Australien",
+            }, {
+                "id": "CA",
+                "name": "Kanada",
+            }, {
+                "id": "SA",
+                "name": "Südafrika",
+            }, {
+                "id": "MA",
+                "name": "Mauritus",
+            }, {
+                "id": "NA",
+                "name": "Namibia",
+            }, {
+                "id": "CH",
+                "name": "China",
+            },{
+                "id": "IN",
+                "name": "Indien",
+            },{
+                "id": "SC",
+                "name": "Südkorea",
+            },{
+                "id": "NL",
+                "name": "Niederlande",
+            }
+            ]);
         }
 
         // Demo-Blogbeiträge anlegen

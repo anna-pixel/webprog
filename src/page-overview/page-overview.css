@@ -14,13 +14,13 @@
     transform: scale(1);
 }
 
-/*.tile img {
+.tile img {
     width: 20em;
     height: 20em;
     max-width: 100%;
     object-fit: cover;
     display: block;
-}*/
+}
 
 .btn-primary{
     color: white;
