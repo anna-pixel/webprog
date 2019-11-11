@@ -34,10 +34,14 @@ class Post {
             pageDom.innerHTML = html;
 
 
-            this._app.setPageTitle("Neuen Post");
+            this._app.setPageTitle("Neuen Post", {isSubPage: true});
             this._app.setPageCss(css);
             this._app.setPageHeader(pageDom.querySelector("header"));
             this._app.setPageContent(pageDom.querySelector("main"));
+
+        // Fertig bearbeitetes HTML-Element zurückgeben
+        return pageDom;
         }
+
 
     }

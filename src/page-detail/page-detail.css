@@ -18,16 +18,16 @@
     order: 2;
 }
 
-.boat-info {
+.country-info {
     font-size: 90%;
 }
 
-.boat-info .label {
+.country-info .label {
     color: darkgrey;
     display: inline-block;
 }
 
-.boat-info .value {
+.country-info .value {
     display: inline-block;
 }
 
@@ -36,7 +36,7 @@
         display: flex;
     }
 
-    .boat-info .field {
+    .country-info .field {
         display: inline-block;
         padding-right: 5em;
     }
