@@ -66,7 +66,13 @@ class PageDetail {
                 html = html.replace("{TITLE}", post.title);
                 html = html.replace("{AUTHOR}", post.author);
                 html = html.replace("{CONTENT}", post.content);
-                html = html.replace("{IMG}", post.img);
+                if(post.img !== undefined){
+                    let imgTemplateElement = pageDom.querySelector("#template-img");
+                    let imgHTML = imgTemplateElement.innerHTML.replace("{SRC}", post.img);
+                    html = html.replace("{IMG}", imgHTML);
+                }else{
+                    html = html.replace("{IMG}", "");
+                }
                 mainElement.innerHTML += html;
             }
         });
