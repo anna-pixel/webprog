@@ -115,14 +115,14 @@ class Database {
                 "title": "Reise nach Stockholm",
                 "author": "Anna",
                 "land": "SE",
-                "content": "Hallo liebe Leute, die Reise nach Stockholm war atemberaubend! :)",
+                "content": "Hallo liebe Leute, die Reise nach Stockholm war überwältigend! :)",
                 "year": 2019,
             }, {
                 "id": "2",
                 "title": "Roadtrip entlang der griechischen Küste",
                 "author": "Henriette ",
                 "land": "GR",
-                "content": "Grüß euch Weltenbummler, in diesem Post stelle ich die schönsten Reiseziele entlang der griechischen Küste vor.",
+                "content": "Grüß euch Weltenbummler, in diesem Post stelle ich euch die schönsten Reiseziele entlang der griechischen Küste vor.",
                 "year": 2008,
             }, {
                 "id": "3",
@@ -155,6 +155,7 @@ class Database {
                 "land": "JP",
                 "content": "Hallo Freunde, in diesem Post berichte ich über meine Erlebnnisse in der ehemaligen, japanischen Hauptstadt Kyoto.",
                 "year": 2019,
+
             }, {
                 "id": "7",
                 "title": "Backpacking durch das Outback",
@@ -162,18 +163,91 @@ class Database {
                 "land": "AUS",
                 "content": "EXCITING news from Australia! Wir sind mit dem Rucksack am Uluru gewandert und haben nachts viele Sterne gesehen.",
                 "year": 2019,
-                "img": "https://www.ozeanien-entdecken.de/img/reisen/Australien__Hoehepunkte_1899_1.jpg"
+                "img": "https://www.ozeanien-entdecken.de/img/reisen/Australien__Hoehepunkte_1899_1.jpg",
+
+            }, {
+              "id": "8",
+              "title": "Genüsse auf dem holländischen Käsemarkt",
+              "author": "Leonie",
+              "land": "NL",
+              "content": "Freunde, ich glaube, ich wandere in das Käseparadies aus!",
+              "year": 2019,
+              "img": "https://www.kaasmarkt.nl/media/1037/rvf_1078-version-3.jpg?width=1280&height=620&mode=crop",
+
+            }, {
+              "id": "9",
+              "title": "Ausflug in das südkoreanische Hawaii",
+              "author": "Anna",
+              "land": "SC",
+              "content": "Hallo meine Lieben, habt ihr schon mal von der wunderschönen Insel Jeju und dem Hello-Kitty-Land gehört?",
+              "year": 2017,
+              "img": "https://static.geo.de/bilder/37/da/68763/article_image_big/jeju-do-island-suedkorea-m-hprn8n.jpg",
+
+            }, {
+              "id": "10",
+              "title": "Linsendal und Yogastunden am heiligen Ganges",
+              "author": "Leonie",
+              "land": "SC",
+              "content": "Hallo Freunde, falls ihr den Sinn eures Lebens sucht, kann ich euch eine 2-wöchige Reise nach Indien nur wärmstens empfehlen.",
+              "year": 2017,
+              "img": "http://cdn.simplesite.com/i/ed/80/283163834432717037/i283163839605056616._szw480h1280_.jpg",
+
+            }, {
+              "id": "11",
+              "title": "Städtetour von Peking nach Shangai",
+              "author": "Henriette",
+              "land": "CHN",
+              "content": "你好 allerseits! Unsere Städtetour von Peking nach Shangai war im wahrsten Sinne atemberaubend!",
+              "year": 2018,
+
+            }, {
+              "id": "12",
+              "title": "Rundreise durch die älteste Wüste der Welt - Namib",
+              "author": "Anna-Maria",
+              "land": "NA",
+              "content": "Liebe Leute, stellt euch vor, ich habe ein echtes Nashorn gesehen!!",
+              "year": 2018,
+              "img": "https://www.imago-images.de/imagoextern/asp/default/bild.asp?c=x%B7%9Cl%91%5C%84Zg%7F%5CWS%BC%C1k%B6T%9F%A9h%D2%A7%B3%C1%C6",
+
+            }, {
+              "id": "13",
+              "title": "Seele baumeln lassen an den traumhaften Stränden Mauritus",
+              "author": "Leonie",
+              "land": "MA",
+              "content": "Hallo Freunde, sehnt ihr euch auch bei diesen winterlichen Temperaturen nach Urlaub in der Südsee?",
+              "year": 2017,
+              "img": "https://picture.yatego.com/images/5bec4787bb8692.7/big_9fca6038acdc7ead8b2353f2237e625c-kqh/strand-hngematte-beach-meer-palmen-wandtattoo-wandsticker-wandaufkleber-r0222.jpg",
+
+            }, {
+              "id": "14",
+              "title": "Kapstadt ist die schönste Stadt der Welt!",
+              "author": "Henriette",
+              "land": "SA",
+              "content": "Seid gegrüst, ihr Reiselustigen. Nachdem ich schon viele Städte der Welt kennnen lernen durfte, kann ich euch heute meinen absoulten Favorit vorstellen.",
+              "year": 2017,
+              "img": "https://globusliebe.com/wp-content/uploads/2017/05/Kapstadt-Urlaub-Tipps.jpg",  
+
+            }, {
+              "id": "15",
+              "title": "Museumstour in Vancouver",
+              "author": "Anna-Maria",
+              "land": "CA",
+              "content": "Servus ihr Lieben, seid ihr interessiert an Kunst, Wissenschaft und Botanik? Dann seid ihr in Vancouver mit seinen zahlreichen Museen genau richtig!",
+              "year": 2017,
+              "img": "https://www.faszination-kanada.com/wp-content/uploads/2018/03/2_VAG-Landon-Mackenzie-100.jpg",
+
+
             }]);
         }
     }
     /**
-     * Gibt alle in der Datenbank gespeicherten Bücher zurück. Hier gilt
+     * Gibt alle in der Datenbank gespeicherten Posts zurück. Hier gilt
      * dasselbe wie im Kommentar zur Methode createDemoData() geschrieben.
      * Alle Dokumente auf einmal auszulesen ist nur dann eine gute Idee,
      * wenn man weiß, dass es nicht viele geben kann. Besser wäre daher,
      * die Menge mit der where()-Funktion von Firebase einzuschränken.
      *
-     * @returns Promise-Objekt mit den gespeicherten Büchern
+     * @returns Promise-Objekt mit den gespeicherten Posts
      */
     async selectAllPosts() {
         let result = await this._posts.orderBy("year").get();
