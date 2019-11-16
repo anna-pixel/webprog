@@ -48,6 +48,7 @@ class Post {
 }
 
 async function save() {
+    let img = document.querySelector("#img").value;
     let e = document.getElementById("land");
     let land = e.options[e.selectedIndex].value;
     let post = {
@@ -56,6 +57,7 @@ async function save() {
         "land": land,
         "content": document.querySelector("#content").value,
         "year": document.querySelector("#jahr").value,
+        "img": img
     };
     await db.database.savePost(post);
 }
