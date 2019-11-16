@@ -304,7 +304,11 @@ class Database {
      * @param post: Zu speicherndes Post-Objekt
      */
     savePost(post) {
-        this._posts.add(post);
+        let saved = true;
+        this._posts.add(post).catch(function(error){
+            saved = false;
+        });
+        return saved;
     }
     /**
      * Speichert einzelnes Country in der Datenbank.
@@ -312,6 +316,7 @@ class Database {
      */
     saveCountry(country) {
         this._countries.doc(country.id).set(country);
+
     }
 
     /**

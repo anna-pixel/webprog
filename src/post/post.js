@@ -59,5 +59,8 @@ async function save() {
         "year": document.querySelector("#jahr").value,
         "img": img
     };
-    await db.database.savePost(post);
+
+    if(await db.database.savePost(post)){
+        alert("Post gespeichert");
+    }
 }

@@ -66,7 +66,7 @@ class PageDetail {
                 html = html.replace("{TITLE}", post.title);
                 html = html.replace("{AUTHOR}", post.author);
                 html = html.replace("{CONTENT}", post.content);
-                if(post.img !== undefined){
+                if(post.img !== undefined && post.img !== ""){
                     let imgTemplateElement = pageDom.querySelector("#template-img");
                     let imgHTML = imgTemplateElement.innerHTML.replace("{SRC}", post.img);
                     html = html.replace("{IMG}", imgHTML);
