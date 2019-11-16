@@ -9,15 +9,12 @@
 <main>
     <form id = "post">
         <label class= "h2" form="post">Blogeintrag hinzufügen</label>
-        <label for="vorname">Vorname</label>
-        <input type= "text" name="vorname" id="vorname"
-               maxlength="30">
-        <label for="titel">Titel</label>
-        <input type="text" name="titel" id="titel"
-               maxlenght="40">
-        <label for= "land">Land</label>
 
-        <select name="land" id="land" size="5">
+        <label for="vorname">Vorname</label>
+        <input type= "text" name="vorname" id="vorname" maxlength="30" required>
+
+        <label for= "land">Land</label>
+        <select name="land" id="land" size="5" required>
             <option value="AUS">Australien</option>
             <option value="CA">Kanada</option>
             <option value="CNA">China</option>
@@ -35,13 +32,21 @@
             <option value="SE">Schweden</option>
             <option value="US">Amerika</option>
         </select>
+
         <label for= "jahr">Jahr</label>
-        <input type= "number" name="year" id="jahr">
-      <p>Blogeintrag</p>
-      <textarea id="content" name="Blogeintrag" cols="25" rows="5"></textarea>
+        <input type= "number" name="year" id="jahr" required>
+
+        <label for="titel">Titel</label>
+        <input type="text" name="titel" id="titel" maxlenght="40" required>
+
+        <label for="img">Bild-URL (optional)</label>
+        <input type="text" id="img" name="img">
+
+        <p>Blogeintrag</p>
+        <textarea id="content" name="Blogeintrag" cols="25" rows="5" required></textarea>
 
         <button type="reset">Eingaben zurücksetzen</button>
-        <button type="submit" id="button-submit">Eingaben absenden</button>
+        <button type="button" id="button-submit">Eingaben absenden</button>
     </form>
 </main>
 
