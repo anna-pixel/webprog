@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html>
-<!-- Include Quill stylesheet -->
-<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-
-<!-- Include the Quill library -->
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
 <header>
     <h1>Post erstellen</h1>
 </header>
+
+<!-- Formular zur Posteingabe -->
 <main>
-    <div id="post creator">
-        <div class="sonstigeInfos">
-            <div id="name">
-                <input type="text" name="Name" placeholder="Name">
-            </div><br>
-            <div id="datum">
-                <input type="date" name="Datum">
-            </div><br>
-        </div>
+    <form id = "post">
+        <label class= "h2" form="post">Blogeintrag hinzufügen</label>
+        <label for="vorname">Vorname</label>
+        <input type= "text" name="vorname" id="vorname"
+               maxlength="30">
+        <label for="titel">Titel</label>
+        <input type="text" name="titel" id="titel"
+               maxlenght="40">
+        <label for= "land">Land</label>
 
-        <!-- Create the Quill editor container -->
-        <div id="editor">
-            <p>Hallo Weltenbummler!</p>
-            <p>Wir freuen uns auf deinen <strong>Reiseblog-Post</strong>!</p>
-            <p><br></p>
-        </div><br>
+        <select name="land" id="land" size="5">
+            <option value="AUS">Australien</option>
+            <option value="CA">Kanada</option>
+            <option value="CNA">China</option>
+            <option value="DE">Schland</option>
+            <option value="FR">Frankreich</option>
+            <option value="GR">Griechenland</option>
+            <option value="IND">Indien</option>
+            <option value="IT">Italien</option>
+            <option value="JA">Japan</option>
+            <option value="MA">Mauritius</option>
+            <option value="NA">Namibia</option>
+            <option value="NL">Niederlande</option>
+            <option value="SA">Südafrika</option>
+            <option value="SC">Südkorea</option>
+            <option value="SE">Schweden</option>
+            <option value="US">Amerika</option>
+        </select>
+        <label for= "jahr">Jahr</label>
+        <input type= "number" name="year" id="jahr">
+      <p>Blogeintrag</p>
+      <textarea id="content" name="Blogeintrag" cols="25" rows="5"></textarea>
 
-        <!-- Initialize Quill editor -->
-        <script>
-            var quill = new Quill('#editor', {
-                theme: 'snow'
-            });
-        </script>
-
-        <div class="button">
-            <button type="button" class="btn btn-primary" id="senden">Post veröffentlichen</button>
-        </div>
-    </div>
+        <button type="reset">Eingaben zurücksetzen</button>
+        <button type="submit" id="button-submit">Eingaben absenden</button>
+    </form>
 </main>
 
 

@@ -46,7 +46,7 @@ class Database {
      * wenn die Collection komplett leer ist.
      * @returns Promise-Objekt zum Abfangen von Fehlern oder Warten auf Erfolg
      */
-    async createDemoData() {
+    /*async createDemoData() {
         // Demo-Länder anlegen
         let countries = await this.selectAllCountries();
 
@@ -104,10 +104,10 @@ class Database {
                 "name": "Niederlande",
             }
             ]);
-        }
+        }*/
 
         // Demo-Blogbeiträge anlegen
-        let posts = await this.selectAllPosts();
+        /*let posts = await this.selectAllPosts();
 
         if (posts.length < 1) {
             this.savePosts([{
@@ -239,7 +239,7 @@ class Database {
 
             }]);
         }
-    }
+    }*/
     /**
      * Gibt alle in der Datenbank gespeicherten Posts zurück. Hier gilt
      * dasselbe wie im Kommentar zur Methode createDemoData() geschrieben.
@@ -304,7 +304,7 @@ class Database {
      * @param post: Zu speicherndes Post-Objekt
      */
     savePost(post) {
-        this._posts.doc(post.id).set(post);
+        this._posts.add(post);
     }
     /**
      * Speichert einzelnes Country in der Datenbank.

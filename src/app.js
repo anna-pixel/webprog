@@ -34,7 +34,7 @@ class App {
 
         // Datenbank-Objekt zum Lesen und Speichern von Daten
         this.database = new Database();
-        this.database.createDemoData();
+        //this.database.createDemoData();
     }
 
     /**

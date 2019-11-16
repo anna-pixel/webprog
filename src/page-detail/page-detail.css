@@ -1,6 +1,10 @@
 /**
  * Stylesheet zur Klasse PageDetail: Detailseite der App
  */
+.card{
+    min-width: 100% !important;
+    margin-bottom: 1em;
+}
 
 .page-heading > div {
     order: 1;
