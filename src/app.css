@@ -105,22 +105,9 @@ header nav li {
     padding: 0.25em 0 0.25em 0;
 }
 
-/* Link-Farben */
-/*header nav a,
-header nav a:visited {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.25s;
-}*/
-
 header nav a:hover {
     color: var(--icon-color);
 }
-
-/*header nav a i,
-header nav a:visited i {
-    color: var(--icon-color);
-}*/
 
 header nav a:hover i {
     color: var(--text-color);
@@ -219,14 +206,3 @@ main {
     background: rgba(240,240,240, 0.9);
 
 }
-
-/*main a,
-main a:visited {
-    color: crimson;
-    text-decoration: underline;
-    transition: color 0.25s;
-}
-
-main a:hover {
-    color: red;
-}*/
